@@ -17,7 +17,7 @@ const contact = functions.https.onRequest((request, response) => {
   return cors(request, response, () => {
     const { email, message, name } = request.body
     const mailOptions = {
-      from: 'mjinkens87@gmail.com',
+      from: 'noreply@mjinkens.com',
       to: 'matthew.jinkens@gmail.com',
       subject: 'Message from ' + name + ' on mjinkens.com',
       text: 'Sender: ' + email + '\n\n' + message
